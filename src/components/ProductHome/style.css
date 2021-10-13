@@ -1,0 +1,61 @@
+.product_area > .swiper-container {
+  padding: 0 27px;
+}
+.product_area > .swiper-container > .swiper-button-next {
+  right: 0;
+  color: #a9a9a9;
+  display: flex;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.product_area > .swiper-container > .swiper-button-next::after {
+  font-size: 1.8rem;
+  color: inherit;
+  font-weight: bolder;
+}
+.product_area > .swiper-container > .swiper-button-next:hover {
+    color: #ff6a28;
+}
+.product_area > .swiper-container > .swiper-button-prev::after {
+  font-size: 1.8rem;
+  color: inherit;
+  font-weight: bolder;
+}
+.product_area > .swiper-container > .swiper-button-prev:hover {
+    color: #ff6a28;
+}
+.product_area > .swiper-container > .swiper-button-prev {
+  left: 0;
+  color: #a9a9a9;
+  display: flex;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.product_area:hover .swiper-button-prev {
+  opacity: 1;
+  animation: left 0.3s ease-in-out;
+}
+.product_area:hover .swiper-button-next {
+  opacity: 1;
+  animation: right 0.3s ease-in-out;
+}
+@keyframes left {
+  from {
+    left: 20px;
+  }
+  to {
+    left: 0;
+  }
+}
+@keyframes right {
+  from {
+    right: 20px;
+  }
+  to {
+    right: 0;
+  }
+}
