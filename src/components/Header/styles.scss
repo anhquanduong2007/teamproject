@@ -1,0 +1,165 @@
+@import "../../Sass/variable";
+@import "../../Sass/mixin";
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    height: 50px;
+    background: $colorBlack;
+    align-items: center;
+
+    .welcome-text {
+        display: flex;
+
+
+        &-items {
+            color: $colorWhile;
+            position: relative;
+            display: flex;
+            align-items: center;
+            font-size: 0.8rem;
+
+            &>span:first-child {
+                margin-right: 5px;
+            }
+
+            &>span:last-child {
+                color: $colorGray;
+            }
+        }
+
+        &-items:first-child::after {
+
+            content: "";
+            position: absolute;
+            right: -20px;
+            top: 0;
+            width: 1px;
+            bottom: 0;
+            background-color: $colorGray;
+            margin: 0 10px;
+
+        }
+
+        &-items:last-child {
+
+            margin-left: 20px;
+
+        }
+
+    }
+
+    .user {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        .avatar {
+            width: 32px;
+            height: 32px;
+            margin-right: 8px;
+        }
+
+        &>i {
+            color: $colorGray;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: all 0.3s ease-in-out;
+        }
+
+        &:hover {
+            &>i {
+                color: $colorHover;
+            }
+        }
+    }
+}
+
+.header-bottom {
+    .middel-inner {
+        display: flex;
+        justify-content: center;
+        padding: 50px 30px;
+        align-items: center;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: "";
+            width: 96%;
+            bottom: 0;
+            height: 1px;
+            background-color: #dbdbdb;
+        }
+        .search {
+            flex: 1;
+
+            &>div {
+
+                border: 1px solid $colorGray;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0 10px;
+                border-radius: 35px;
+                width: 250px;
+
+                &>input {
+                    border: none;
+                    outline: none;
+                    background-color: transparent;
+                    padding: 14px 12px;
+                }
+
+                &>i {
+                    font-size: 1.2rem;
+                    color: $colorGray;
+                }
+            }
+
+        }
+
+        .header-bottom__logo {
+            flex: 1;
+            @include flexcenter;
+        }
+
+        .cart {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+
+            &>div {
+                border: 1px solid $colorGray;
+                padding: 10px 10px;
+                width: 120px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 35px;
+                cursor: pointer;
+
+                &>i {
+                    font-size: 1.2rem;
+                    @include flexcenter;
+                    margin-right: 5px;
+                    color: #747474;
+                }
+
+                &>span {
+                    font-weight: bolder;
+                    color: #747474;
+                }
+            }
+
+        }
+    }
+
+}
+.navigation {
+    @include flexcenter;
+    & > a {
+        padding: 0 10px;
+        text-decoration: none;
+    }
+}
