@@ -1,0 +1,127 @@
+@import "../../Sass/variable";
+
+.contact-us {
+    padding-top: 80px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    &__breadcrumb {
+        display: flex;
+        justify-content: flex-start;
+
+        &>span {
+            &>a {
+                color: #747474;
+                text-decoration: none;
+
+                &:hover {
+                    color: $colorHover;
+                }
+            }
+        }
+    }
+
+    &__message {
+        &>h1 {
+            font-family: "Balsamiq Sans", cursive;
+        }
+
+        padding: 0 20px 0 0;
+
+        &>ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            &>li {
+                padding: 20px 0;
+                border-top: 1px solid #e4e4e4;
+                display: flex;
+                align-items: center;
+
+                &>i {
+                    font-size: 1.25rem;
+                    margin-right: 8px;
+                }
+
+                &>span {
+                    color: #747474;
+                }
+
+                &>a {
+                    color: $colorHover;
+                    transition: all .3s ease 0s;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: #242424
+                    }
+                }
+            }
+        }
+    }
+
+    &__form {
+        padding: 0 0 0 20px;
+
+        &>h1 {
+            font-family: "Balsamiq Sans", cursive;
+        }
+
+        &>div {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+
+            &>input {
+                padding: 14px 12px;
+                color: #747474;
+                border: 1px solid #ddd;
+                outline: none;
+            }
+
+            &>label {
+                margin-top: 10px;
+            }
+
+            &>textarea {
+                padding: 14px 12px;
+                height: 170px;
+                border: 1px solid #ddd;
+                resize: none;
+                margin-top: 20px;
+                color: #747474;
+                outline: none;
+
+            }
+        }
+
+        &>button {
+            width: 120px;
+            height: 40px;
+            border: 1px solid $colorHover;
+            background: $colorHover;
+            cursor: pointer;
+            color: $colorWhile;
+            font-weight: 600;
+            outline: none;
+            transition: .3s;
+            text-transform: uppercase;
+
+            &:hover {
+                border-color: #242424;
+                background-color: #242424;
+            }
+        }
+    }
+
+    .map {
+        padding: 0 20px;
+        margin-top: 60px;
+
+        &>iframe {
+            border: none;
+        }
+    }
+}
