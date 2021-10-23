@@ -49,10 +49,10 @@ const Header = () => {
         </div>
       </Grid>
       <Grid item md = {12} className = "navigation">
-          <NavLink to  = "/" exact activeClassName = "navigation--active">Home</NavLink>
-          <NavLink to  = "/shop" activeClassName = "navigation--active">Shop</NavLink>
-          <NavLink to  = "/aboutus" activeClassName = "navigation--active">About Us</NavLink>
-          <div className = "sub-menu" activeClassName = "navigation--active">
+          <NavLink to  = "/" exact activeclassname = "navigation--active">Home</NavLink>
+          <NavLink to  = "/shop" activeclassname = "navigation--active">Shop</NavLink>
+          <NavLink to  = "/aboutus" activeclassname = "navigation--active">About Us</NavLink>
+          <div className = "sub-menu" activeclassname = "navigation--active">
               <div>
                   Pages <i className="bx bx-chevron-down"></i>
               </div>

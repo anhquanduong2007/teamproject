@@ -15,12 +15,12 @@ const Footer = () => {
             alignItems="flex-start"
             className="widgets-container__menu"
           >
-            <Link>About Us</Link>
-            <Link>Delivery Information</Link>
-            <Link>Privacy Policy</Link>
-            <Link>Terms & Conditions</Link>
-            <Link>Contact Us</Link>
-            <Link>Returns</Link>
+            <Link to="/">About Us</Link>
+            <Link to="/">Delivery Information</Link>
+            <Link to="/">Privacy Policy</Link>
+            <Link to="/">Terms & Conditions</Link>
+            <Link to="/">Contact Us</Link>
+            <Link to="/">Returns</Link>
           </Box>
         </Grid>
         <Grid item md={2} className="widgets-container">
@@ -32,12 +32,12 @@ const Footer = () => {
             alignItems="flex-start"
             className="widgets-container__menu"
           >
-            <Link>Brands</Link>
-            <Link>Gift Certificates</Link>
-            <Link>Affiliate</Link>
-            <Link>Specials</Link>
-            <Link>Site Map</Link>
-            <Link>My Account</Link>
+            <Link to = "/">Brands</Link>
+            <Link to = "/">Gift Certificates</Link>
+            <Link to = "/">Affiliate</Link>
+            <Link to = "/">Specials</Link>
+            <Link to = "/">Site Map</Link>
+            <Link to = "/">My Account</Link>
           </Box>
         </Grid>
         <Grid
@@ -67,16 +67,16 @@ const Footer = () => {
             justifyContent="flex-start"
             className="contact-us-icon"
           >
-            <Link>
+            <Link to="/">
               <i className="bx bxl-twitter"></i>
             </Link>
-            <Link>
+            <Link to="/">
               <i className="bx bxl-google-plus"></i>
             </Link>
-            <Link>
+            <Link to="/">
               <i className="bx bxl-facebook"></i>
             </Link>
-            <Link>
+            <Link to="/">
               <i className="bx bxl-youtube"></i>
             </Link>
           </Box>
@@ -106,9 +106,9 @@ const Footer = () => {
           </p>
         </Grid>
         <Grid item md={6} className="footer-custom-links">
-          <Link>Order History</Link>
-          <Link>Wish List</Link>
-          <Link>Newsletter</Link>
+          <Link to="/">Order History</Link>
+          <Link to="/">Wish List</Link>
+          <Link to="/">Newsletter</Link>
         </Grid>
       </Grid>
     </Grid>
